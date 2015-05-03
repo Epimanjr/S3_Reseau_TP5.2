@@ -1,0 +1,132 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./index_fichiers/filelist.xml">
+<title>Serveur MiniWeb</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Nataf</o:Author>
+  <o:LastAuthor>Nataf</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>31</o:TotalTime>
+  <o:Created>2002-12-27T12:11:00Z</o:Created>
+  <o:LastSaved>2003-01-01T12:07:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>51</o:Words>
+  <o:Characters>292</o:Characters>
+  <o:Company>Loria</o:Company>
+  <o:Lines>2</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>358</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=FR link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'>Mini serveur web dynamique</h1>
+
+<h2>Sujet du TP</h2>
+
+<p class=MsoNormal>Le serveur web à réaliser est une extension du serveur MiniWeb.
+Sa particularité est de permettre à des applications java de s’exécuter sous le
+contrôle du serveur. Les pages html pourront contenir des référence à des
+classes java sous forme de liens «&nbsp;clickables&nbsp;». Lorsque l’utilisateur
+suit un tel lien, la classe est chargée dans le serveur et une méthode nommée&nbsp;:
+init() est exécutée. Cette méthode doit retourner une chaîne de caractères
+(String java) qui s’affichera comme une page html sur le navigateur.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Les classes que le serveur peut charger doivent implémenter
+l’interface webclasses.MiniServlet qui ne contient que la méthode init(). Si
+les classes sont stockées dans des sous-répertoires, il faut qu’elles fasse
+partie d’un package java reprenant l’arborescence. Par exemple, la classe
+DateServeur est dans le sous-répertoire webclasses du répertoire courant (celui
+d’où est lancé le serveur), elle fait donc partie du package webclasses (source
+du code <a href="webclasses\DateServeur.java">webclasses\DateServeur.java</a>).
+Dans une page html référençant une classe, le lien doit être fait avec le
+chemin permettant de trouver le fichier et correspondant au nom du package et
+de la classe. Par exemple le lien <a href="webclasses/DateServeur.class">classe
+DateServeur</a> montre que l’on appelle la classe DateServeur dans le
+sous-répertoire webclasses.</p>
+
+</div>
+
+</body>
+
+</html>

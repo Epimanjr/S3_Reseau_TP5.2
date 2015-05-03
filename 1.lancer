@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -cp "build/classes" MiniWeb $1
